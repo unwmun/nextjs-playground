@@ -4,6 +4,7 @@ export default function ReadMore({ post }) {
   const router = useRouter()
 
   return (
+    <>
     <span
       onClick={() => {
         router.push({
@@ -14,5 +15,12 @@ export default function ReadMore({ post }) {
     >
       Click here to read more
     </span>
+    <span 
+      onClick={() => {
+        console.log(router.route);
+        console.log(router.pathname);
+      }}>
+    </span>
+    </>
   )
 }
